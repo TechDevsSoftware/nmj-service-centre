@@ -297,59 +297,24 @@ text.block-14 {color:white;}
     <div class="w-container">
       <h1 class="heading-6">GET IN TOUCH WITH US</h1>
       <div id="formInstructions" class="small-text"><em class="italic-text">Fields marked with an asterisk (*) are required.</em></div>
-      
-      <div id="netlify-contact-form">
-        <form id="contact-form-netlify" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <div class="w-form">
+        <form id="wf-form-Contact-Form" name="contact" data-name="Contact Form" method="POST" data-netlify="true" data-wf-page-id="5ed647b68a66af8efbd97f49" data-wf-element-id="cd124a84-baf9-ef65-b5e2-963f194667fd">
           <input type="hidden" name="form-name" value="contact">
-          <input type="hidden" name="bot-field">
-          
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
-            <div>
-              <label for="firstName" style="display: block; margin-bottom: 5px; font-weight: 600;">First name *</label>
-              <input type="text" id="firstName" name="first-name" required 
-                style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; font-size: 16px;">
-            </div>
-            <div>
-              <label for="lastName" style="display: block; margin-bottom: 5px; font-weight: 600;">Last name *</label>
-              <input type="text" id="lastName" name="last-name" required
-                style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; font-size: 16px;">
-            </div>
-          </div>
-          
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
-            <div>
-              <label for="email" style="display: block; margin-bottom: 5px; font-weight: 600;">Email *</label>
-              <input type="email" id="email" name="email" required
-                style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; font-size: 16px;">
-            </div>
-            <div>
-              <label for="phone" style="display: block; margin-bottom: 5px; font-weight: 600;">Phone number</label>
-              <input type="tel" id="phone" name="phone"
-                style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; font-size: 16px;">
-            </div>
-          </div>
-          
-          <div style="margin-bottom: 20px;">
-            <label for="message" style="display: block; margin-bottom: 5px; font-weight: 600;">Message</label>
-            <textarea id="message" name="message" rows="5"
-              style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; font-size: 16px; resize: vertical;"></textarea>
-          </div>
-          
-          <button type="submit" id="submitBtn"
-            style="background-color: #1a73e8; color: white; padding: 14px 30px; border: none; border-radius: 4px; font-size: 16px; cursor: pointer; font-weight: 600;">
-            Submit
-          </button>
+          <div class="contact-form-grid">
+            <div id="w-node-cd124a84-baf9-ef65-b5e2-963f194667ff-fbd97f49"><label for="First-Name" id="contact-first-name" class="field-label-4">First name *</label><input class="text-field w-input" maxlength="256" name="First-Name" data-name="First Name" placeholder="" type="text" id="First-Name" required=""></div>
+            <div id="w-node-cd124a84-baf9-ef65-b5e2-963f19466803-fbd97f49"><label for="Last-Name" id="contact-last-name" class="field-label">Last name *</label><input class="text-field-3 w-input" maxlength="256" name="Last-Name" data-name="Last Name" placeholder="" type="text" id="Last-Name" required=""></div>
+            <div id="w-node-cd124a84-baf9-ef65-b5e2-963f19466807-fbd97f49"><label for="Email" id="contact-email" class="field-label-3">Email *</label><input class="text-field-2 w-input" maxlength="256" name="Email" data-name="Email" placeholder="" type="email" id="Email" required=""></div>
+            <div id="w-node-cd124a84-baf9-ef65-b5e2-963f1946680b-fbd97f49"><label for="Contact-Phone-Number" id="contact-phone" class="field-label-2">Phone number</label><input class="text-field-4 w-input" maxlength="256" name="Contact-Phone-Number" data-name="Contact Phone Number" placeholder="" type="tel" id="Contact-Phone-Number"></div>
+            <div id="w-node-cd124a84-baf9-ef65-b5e2-963f1946680f-fbd97f49"><label for="Message" id="contact-message" class="field-label-5">Message</label><textarea data-name="Message" maxlength="5000" id="Message" name="Message" placeholder="" class="textarea w-input"></textarea></div>
+          </div><input type="submit" data-wait="Please wait..." class="nmjbutton w-button" value="Submit">
         </form>
-        
-        <div id="form-success" style="display: none; padding: 20px; background-color: #d4edda; border: 1px solid #c3e6cb; border-radius: 4px; color: #155724; margin-top: 20px;">
-          <strong>Thank you!</strong> Your message has been sent successfully. We'll get back to you soon.
+        <div class="w-form-done">
+          <div>Thank you! Your submission has been received!</div>
         </div>
-        
-        <div id="form-error" style="display: none; padding: 20px; background-color: #f8d7da; border: 1px solid #f5c6cb; border-radius: 4px; color: #721c24; margin-top: 20px;">
-          <strong>Oops!</strong> Something went wrong. Please try again or contact us directly at service@nmjmotorhouse.co.uk
+        <div class="w-form-fail">
+          <div>Oops! Something went wrong while submitting the form.</div>
         </div>
       </div>
-      
     </div>
   </section>
   <div class="section">
@@ -520,52 +485,5 @@ text.block-14 {color:white;}
   </div>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=5ec23f8f0962179926a2ccba" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="js/webflow.js" type="text/javascript"></script>
-  <script>
-    // Netlify form submission handler - completely independent of Webflow
-    (function() {
-      const form = document.getElementById('contact-form-netlify');
-      if (!form) return;
-      
-      form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        const submitBtn = document.getElementById('submitBtn');
-        const successDiv = document.getElementById('form-success');
-        const errorDiv = document.getElementById('form-error');
-        
-        // Update button state
-        submitBtn.textContent = 'Sending...';
-        submitBtn.disabled = true;
-        
-        // Hide any previous messages
-        successDiv.style.display = 'none';
-        errorDiv.style.display = 'none';
-        
-        // Create form data
-        const formData = new FormData(form);
-        
-        fetch('/', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-          body: new URLSearchParams(formData).toString()
-        })
-        .then(function(response) {
-          if (response.ok) {
-            form.style.display = 'none';
-            successDiv.style.display = 'block';
-            form.reset();
-          } else {
-            throw new Error('Network response was not ok');
-          }
-        })
-        .catch(function(error) {
-          console.error('Form submission error:', error);
-          errorDiv.style.display = 'block';
-          submitBtn.textContent = 'Submit';
-          submitBtn.disabled = false;
-        });
-      });
-    })();
-  </script>
 </body>
 </html>
